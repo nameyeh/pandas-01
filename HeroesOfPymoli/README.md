@@ -1,8 +1,9 @@
 
 # Heroes Of Pymoli Data Analysis
-* OBSERVED TREND 1 
-* OBSERVED TREND 2 
-* OBSERVED TREND 3 
+## Observed Trends 
+* As seen in the gender demographics table, the player population is overwhelming male. 
+* Because there are more male players, the total purchase value for males is higher than females; however, the normalized totals indicate that males and females spent roughly the same amount. 
+* The age distribution shows that the majority of players were between the ages of 15-29, with about half between the ages of 20-24.  
 
 
 ```python
@@ -92,9 +93,9 @@ total_rev = df["Price"].sum()
 #Print Purchasing Analysis (Total)table 
 purch_table = pd.DataFrame({
     "Number of Unique Items":[unique_items],\
-    "Average Price": ["$"+str(round(avg_price,2))],\
+    "Average Price": [avg_price],\
     "Number of Purchases": [n_purchases],\
-    "Total Revenue": ["$"+str(round(total_rev,2))]
+    "Total Revenue": [total_rev]
 })
 
 # Reorganizing the columns using double brackets
@@ -133,9 +134,9 @@ org_purch_table
     <tr>
       <th>0</th>
       <td>183</td>
-      <td>$2.93</td>
+      <td>2.931192</td>
       <td>780</td>
-      <td>$2286.33</td>
+      <td>2286.33</td>
     </tr>
   </tbody>
 </table>
